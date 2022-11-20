@@ -1,0 +1,157 @@
+{
+  "doctors": [
+    {
+      "mob": 9423723521,
+      "mail": "ninad@gmail.com",
+      "fname": "Dr.Ninad Mali",
+      "pass": "@Ninad9699",
+      "cpass": "@Ninad9699",
+      "date": "2022-11-18T18:30:00.000Z",
+      "degree1": "MBBS",
+      "degree2": "MD(Path)",
+      "fee1": 500,
+      "fee2": 1000,
+      "id": 1
+    },
+    {
+      "mob": 9423723521,
+      "mail": "ninad@gmail.com",
+      "fname": "Dr.Madhuri Mali",
+      "pass": "@Ninad9699",
+      "cpass": "@Ninad9699",
+      "date": "2022-11-18T18:30:00.000Z",
+      "degree1": "MBBS",
+      "degree2": "MD(NURO)",
+      "fee1": 500,
+      "fee2": 1000,
+      "id": 2
+    },
+    {
+      "mob": 8669111913,
+      "mail": "mali@gmail.com",
+      "fname": "Dr.Neha Gavde",
+      "pass": "@Neha123",
+      "cpass": "@Neha123",
+      "date": "2022-11-18T18:30:00.000Z",
+      "degree1": "MBBS",
+      "degree2": "gynecologist",
+      "fee1": 1000,
+      "fee2": 2000,
+      "id": 3
+    },
+    {
+      "mob": 9420680621,
+      "mail": "N@gmail.com",
+      "fname": "Dr.Vikas Mali",
+      "pass": "Ninad234",
+      "cpass": "Ninad234",
+      "date": "2022-11-19T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "600",
+      "fee2": "6000",
+      "value0": "MS",
+      "id": 4
+    },
+    {
+      "mob": 9422384621,
+      "mail": "L@gmail.com",
+      "fname": "Dr.Laxman A Mali",
+      "pass": "Laxman123",
+      "cpass": "Laxman123",
+      "date": "2017-06-19T18:30:00.000Z",
+      "degree1": "BHMS",
+      "fee1": "200",
+      "fee2": "600",
+      "degree2": "MD",
+      "id": 5
+    },
+    {
+      "mob": 9404941248,
+      "mail": "sd@gmail.com",
+      "fname": "Dr.Shreya Dudhgaonkar",
+      "pass": "Shreya123",
+      "cpass": "Shreya123",
+      "date": "2022-11-29T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "1000",
+      "fee2": "5000",
+      "degree2": "MD(ortho)",
+      "id": 6
+    },
+    {
+      "mob": 8652417589,
+      "mail": "Y@gmail.com",
+      "fname": "Dr.Shrinivas Dudhgaonkar",
+      "pass": "Shree456",
+      "cpass": "Sree456",
+      "date": "2022-11-04T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "600",
+      "fee2": "2000",
+      "degree2": "MD",
+      "id": 7
+    },
+    {
+      "mob": 7588868021,
+      "mail": "N@gmail.com",
+      "fname": "Dr.Nupur Mali",
+      "pass": "Nupur123",
+      "cpass": "Nupur123",
+      "date": "2022-11-24T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "1000",
+      "fee2": "2000",
+      "degree20": "DGO",
+      "id": 8
+    },
+    {
+      "mob": 9423723521,
+      "mail": "D@Gmail.com",
+      "fname": "Dr.Diya Dudhagaonkar",
+      "pass": "Diya123456",
+      "cpass": "Diya123",
+      "date": "2022-11-25T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "800",
+      "fee2": "1600",
+      "degree20": "MD",
+      "id": 9
+    },
+    {
+      "mob": 8669111913,
+      "mail": "J@gmail.com",
+      "fname": "Dr.Jiya Dudhagaonkar",
+      "pass": "Jiya123456",
+      "cpass": "Jiya123456",
+      "date": "2022-11-25T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "800",
+      "fee2": "1600",
+      "degree20": "MD",
+      "id": 10
+    },
+    {
+      "mob": 8669111913,
+      "mail": "Rohit@gmail.cpm",
+      "fname": "Dr.Rohit Tate",
+      "pass": "Rohit123",
+      "cpass": "Rohit123",
+      "date": "2022-11-22T18:30:00.000Z",
+      "degree1": "MBBS",
+      "fee1": "900",
+      "fee2": "1500",
+      "degree20": "MD",
+      "id": 11
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

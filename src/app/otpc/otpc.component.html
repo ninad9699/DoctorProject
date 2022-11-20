@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1> Verify otp </h1>
+                    
+                    <hr>
+                </div>
+                <form name="myForm1" #frm2="ngForm" >
+                    <div class="mb-3">
+                        <label class="form-label">Plz enter otp</label>
+                        <input type="number"name="otp"class="form-control" #otp="ngModel" ngModel
+                            placeholder="otp" 
+                            required [ngClass]="{'is-invali':frm2.submitted && otp.invalid}" >
+                        <div *ngIf="frm2.submitted && otp.invalid" class="invalid-feedback">
+                             Enter Otp
+                        </div>
+                        <button type="button" class="btn btn-primary">resend data</button>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary"(click)="onOtp(frm2)">Next</button>
+                </form>
+                <div><br>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>

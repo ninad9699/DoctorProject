@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="text-center">
+          <h1 style="background-color:black;color: white;">Registration</h1>
+          <h5>Contact Info</h5>
+          <hr>
+        </div>
+        <form name="myForm" #frm="ngForm" (ngSubmit)="frm.form.valid && onSubmit(frm)">
+          <div class="mb-3">
+            <label class="form-label">Mobile Number</label>
+            <input type="number" name="mob" class="form-control" placeholder="Enter Mobile Number" #mob="ngModel"
+              ngModel required [ngClass]="{'is-invalid':frm.submitted && mob.invalid}">
+            <div *ngIf="frm.submitted && mob.invalid" class="invalid-feedback">
+              Mobile Number required
+            </div>
+          </div>
+          
+          <div class="mb-3">
+            <label class="form-label">Email address</label>
+            <input type="email" name="mail" class="form-control" #mail="ngModel" placeholder="Enter Email Address"
+              ngModel required [ngClass]="{'is-invalid':frm.submitted && mail.invalid}"
+              pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+            <div *ngIf="mail.touched" class="invalid-feedback">
+              <p *ngIf="mail.errors ?.['required']">Email required</p>
+              <p *ngIf="mail.errors ?.['pattern']">Plz Enter Valid Email</p>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Full Name:</label>
+            <input type="text" name="fname" class="form-control" #fname="ngModel" ngModel placeholder="Enter Full Name"
+              required [ngClass]="{'is-invalid': frm.submitted && fname.invalid}">
+            <div *ngIf="frm.submitted && fname.invalid" class="invalid-feedback">
+              Fullname Is Required
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" name="pass" span class="form-control" #pass="ngModel" ngModel placeholder="Enter Password"
+              required [ngClass]="{'is-invalid':frm.submitted && pass.invalid}"
+              pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,30})"
+              >           
+
+            <div *ngIf="frm.submitted && pass.invalid" class="invalid-feedback">
+              <p *ngIf="frm.submitted && pass.errors  ?.['required']">Password required</p>
+              <p *ngIf="pass.errors ?.['pattern']">Plz Enter Valid password</p>
+
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Confirm Password</label>
+            <input type="password" name="cpass" class="form-control" #pass="ngModel" ngModel
+              placeholder="Enter Confirm Password">
+          </div>
+          <div class="mb-3">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <label>Date Of Graduation</label>
+              <mat-label></mat-label>
+              <input matInput [matDatepicker]="picker" name="date" #date="ngModel" ngModel>
+              <mat-hint>MM/DD/YYYY</mat-hint>
+              <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+            <button mat-raised-button (click)="picker.open()" type="button">Open</button>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Degree 1</label>
+            <input type="text" name="degree1" class="form-control" #degree="ngModel" ngModel
+              placeholder="Enter Degree 1">
+          </div>
+          <!-- <div class="mb-3">
+                               <h2>{{name}}</h2>
+                              <div *ngFor="let values of values;let i=index"></div> 
+                              <label  class="form-label">Degree 2</label>
+                              <input type="text" name="course2" class="form-control" #degree2="ngModel"
+                               placeholder="Enter Degree 2" >
+                               <button type="add" class="btn btn-danger">Add Another</button>
+                                </div> -->
+          <div class="mb-3" *ngFor="let value of values; let i=index">
+            <label class="form-lable">Next Degree</label>
+            <input type="text" [(ngModel)]="value.value" class="form-control" #name="ngModel" name="degree2{{i}}" value="{{value}}">
+          </div>
+          <button (click)="addvalue()" type="button">Add Another</button>
+
+          <div class="mb-3">
+            <label class="form-label">Online Consult Fee</label>
+            <input type="text" name="fee1" class="form-control" #fee1="ngModel" ngModel>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">In Person Consult Fee</label>
+            <input type="text" name="fee2" class="form-control" #fee2="ngModel" ngModel>
+
+          </div>
+
+
+
+
+          <button type="submit"  style="width:100%; background-color:rgb(11, 143, 150); ;">Submit</button>
+
+        </form><br>
+
+      </div>
+    </div>
+  </div>
+</div>

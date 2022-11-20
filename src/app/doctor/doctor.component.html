@@ -1,0 +1,99 @@
+<div>
+    <div class="row">    
+        <div>
+            <h1>Ragistered Doctors</h1>
+            <div class="card">
+                <div style="display:flex; justify-content:space-evenly;">
+                <div>
+                   <img src="../../assets/images/Elon_Musk_Royal_Society_(crop2).jpg.webp"style="height: 100px;width: 100px;" alt="Elon musk">
+                </div>
+                <div>
+                    <h3>Dr.Elon Musk</h3>
+                    <p>MBBS,MD,DM</p>
+                    <button class="btn btn-primary">Next Slot 11 AM</button>
+                </div>
+                
+            </div>
+                <div style="display:flex;justify-content:space-evenly;">
+                    <div>
+                        <h5>Experince</h5>
+                        <p> 12 year</p>
+                       
+                    </div>
+                    <div>
+                        <h5>Fees</h5>
+                        <p>1500 Online Consult</p>
+                        <p>2000 In-person Consult</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-success" style="width:100% ;">Book Appoinment</button>
+                </div>
+            </div><br>  <br>
+
+            <div class="card">
+                <div style="display:flex; justify-content:space-evenly;">
+                <div>
+                   <img src="../../assets/images/Jeff-Bezos-2017.webp" style="height:100px;width: 100px;" alt="Jeff Bezos">
+                </div>
+                <div>
+                    <h3>Dr.Jeff Bezos</h3>
+                    <p>MBBS,MS(Cardiology)</p>
+                    <button class="btn btn-primary">Next Slot 15 NOV ,9 AM</button>
+                </div>
+                
+            </div>
+                <div style="display:flex;justify-content:space-evenly;">
+                    <div>
+                        <h5>Experince</h5>
+                        <p>18.9 year</p>
+                    </div>
+                    <div>
+                        <h5>Fees</h5>
+                        <p>1500 Online Consult</p>
+                        <p>2000 In-person Consult</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-success" style="width:100% ;">Book Appoinment</button>
+                </div>
+            </div> <br>   
+
+            <div *ngFor="let x of data" class="card">
+                <div style="display:flex; justify-content:space-evenly;">
+                <div>
+                   <img src="../../assets/images/doctor img.webp" style="height:100px;width: 100px;" alt="Jeff Bezos">
+                </div>
+                <div>
+                    <h3>{{x.fname}}</h3>
+                    <p>{{x.degree1}},{{x.degree20}}</p>
+                    <button class="btn btn-primary">Next Slot 15 NOV ,9 AM</button>
+                </div>
+                
+            </div>
+                <div style="display:flex;justify-content:space-evenly;">
+                    <div>
+                        <h5>Experince</h5>
+                        <p>5 year</p>
+                    </div>
+                    <div>
+                        <h5>Fees</h5>
+                        <p>{{x.fee1}}Online Consult</p>
+                        <p>{{x.fee2}} In-person Consult</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn btn-success" style="width:100% ;">Book Appoinment</button>
+                </div>
+            </div>   <br>  
+    </div>
+    
+
+</div><br><br>
+<div>
+    <button class="btn btn-secondary" style="width:100% ;">Lode More</button>
+</div>
+<div><br><br>
+    <button class="btn btn-secondary" style="width:100%;"(click)="goHome()">Go to Home </button>
+</div>
+</div>
